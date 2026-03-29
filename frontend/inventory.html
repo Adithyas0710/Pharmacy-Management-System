@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Inventory - Pharmacy System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Pharmacy Inventory Management</h2>
+  </header>
+  <div class="container">
+    <h2>Add Medicine</h2>
+    <form id="medicineForm">
+      <div class="form-group">
+        <label for="name">Medicine Name:</label>
+        <input id="name" type="text" placeholder="Enter medicine name" required>
+      </div>
+      <div class="form-group">
+        <label for="stock">Stock Quantity:</label>
+        <input id="stock" type="number" placeholder="Enter stock quantity" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Price per Unit:</label>
+        <input id="price" type="number" step="0.01" placeholder="Enter price" required>
+      </div>
+      <button type="button" onclick="addMedicine()">Add Medicine</button>
+    </form>
+    <h3>All Medicines</h3>
+    <button onclick="loadMeds()">Refresh List</button>
+    <pre id="medList"></pre>
+    <div class="links">
+      <a href="index.html">Back to Billing</a>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

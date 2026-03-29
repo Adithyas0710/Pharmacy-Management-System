@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Search Customer - Pharmacy System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Customer Transaction Search</h2>
+  </header>
+  <div class="container">
+    <h2>Search Customer Transactions</h2>
+    <form id="searchForm">
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input id="phone" type="tel" placeholder="Enter phone number" required>
+      </div>
+      <button type="button" onclick="searchData()">Search</button>
+    </form>
+    <h3>Transaction History</h3>
+    <pre id="result"></pre>
+    <div class="links">
+      <a href="index.html">Back to Billing</a>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
